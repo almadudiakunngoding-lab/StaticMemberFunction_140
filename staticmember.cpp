@@ -12,3 +12,13 @@ public:
     // deklarasi prosedur setID() dan printAll()
     void setID();
     void printAll();
+
+    // pembuatan constructor Mahasiswa dengan parameter pnama
+    // Member initialize list
+    Mahasiswa(string pnama) : nama(pnama) {
+        setID();
+    }
+};
+
+// memberi value ke variabel nim dari class mahasiswa
+int Mahasiswa::nim = 0;
